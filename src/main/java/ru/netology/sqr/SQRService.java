@@ -2,17 +2,17 @@ package ru.netology.sqr;
 
 public class SQRService {
 
-    public static int Permutation(int left, int right) {
+    public static int Permutation(int lowLineLimit, int upLineLimit) {
 
-        int c = 0;
-        for (int j = 10; j >= 10 && j <= 99; j++) {
-            int d = j * j;
+        int countSquares = 0;
+        for (int i = 10; i >= 10 && i <= 99; i++) {
+            int squareOfNumber = i * i;
 
-            if (d >= left && d <= right) {
-                c++;
+            if (squareOfNumber >= lowLineLimit && squareOfNumber <= upLineLimit) {
+                countSquares++;
 
             }
         }
-        return c;
+        return countSquares;
     }
 }

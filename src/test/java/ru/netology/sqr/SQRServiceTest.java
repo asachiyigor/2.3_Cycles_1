@@ -7,49 +7,49 @@ import static org.junit.jupiter.api.Assertions.*;
 class SQRServiceTest {
 
     @Test
-    void shouldCalculalateLeft100Right200() {
+    void shouldCalculalateLowLineLimit100UpLineLimit200() {
 
-        int left = 100;
-        int right = 200;
+        int lowLineLimit = 100;
+        int upLineLimit = 200;
         int expected = 5;
 
-        int actual = SQRService.Permutation(left, right);
+        int actual = SQRService.Permutation(lowLineLimit, upLineLimit);
 
         assertEquals(expected, actual);
     }
 
     @Test
-    void shouldCalculalateLeft500Right1000() {
+    void shouldCalculalateLowLineLimit500UpLineLimit1000() {
 
-        int left = 500;
-        int right = 1000;
+        int lowLineLimit = 500;
+        int upLineLimit = 1000;
         int expected = 9;
 
-        int actual = SQRService.Permutation(left, right);
+        int actual = SQRService.Permutation(lowLineLimit, upLineLimit);
 
         assertEquals(expected, actual);
     }
 
     @Test
-    void shouldCalculalateLeft1000Right7000() {
+    void shouldCalculalateLowLineLimit1000UpLineLimit7000() {
 
-        int left = 1000;
-        int right = 7000;
+        int lowLineLimit = 1000;
+        int upLineLimit = 7000;
         int expected = 52;
 
-        int actual = SQRService.Permutation(left, right);
+        int actual = SQRService.Permutation(lowLineLimit, upLineLimit);
 
         assertEquals(expected, actual);
     }
 
     @Test
-    void shouldCalculalateLeft8000Right9800() {
+    void shouldCalculalateLowLineLimit8000UpLineLimit9800() {
 
-        int left = 8000;
-        int right = 10000;
+        int lowLineLimit = 8000;
+        int upLineLimit = 10000;
         int expected = 10;
 
-        int actual = SQRService.Permutation(left, right);
+        int actual = SQRService.Permutation(lowLineLimit, upLineLimit);
 
         assertEquals(expected, actual);
     }
