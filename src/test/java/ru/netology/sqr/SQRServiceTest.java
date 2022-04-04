@@ -13,7 +13,7 @@ class SQRServiceTest {
         int upLineLimit = 200;
         int expected = 5;
 
-        int actual = SQRService.Permutation(lowLineLimit, upLineLimit);
+        int actual = SQRService.permutation(lowLineLimit, upLineLimit);
 
         assertEquals(expected, actual);
     }
@@ -25,7 +25,7 @@ class SQRServiceTest {
         int upLineLimit = 1000;
         int expected = 9;
 
-        int actual = SQRService.Permutation(lowLineLimit, upLineLimit);
+        int actual = SQRService.permutation(lowLineLimit, upLineLimit);
 
         assertEquals(expected, actual);
     }
@@ -37,7 +37,7 @@ class SQRServiceTest {
         int upLineLimit = 7000;
         int expected = 52;
 
-        int actual = SQRService.Permutation(lowLineLimit, upLineLimit);
+        int actual = SQRService.permutation(lowLineLimit, upLineLimit);
 
         assertEquals(expected, actual);
     }
@@ -49,7 +49,7 @@ class SQRServiceTest {
         int upLineLimit = 10000;
         int expected = 10;
 
-        int actual = SQRService.Permutation(lowLineLimit, upLineLimit);
+        int actual = SQRService.permutation(lowLineLimit, upLineLimit);
 
         assertEquals(expected, actual);
     }
